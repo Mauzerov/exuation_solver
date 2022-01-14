@@ -37,7 +37,7 @@ class App(tk.Tk):
         c =\
             (
                 (x3.v * x1.a * x2.b) - (x2.a * x1.b * x3.v) + (x1.b * x2.v * x3.a) -
-                (x3.a * x2.b * x1.v) - (x3.b * x1.a * x2.v) + (x3.b * x2.a * x1.b)
+                (x3.a * x2.b * x1.v) - (x3.b * x1.a * x2.v) + (x3.b * x2.a * x1.v)
             ) /\
             (
                 (x3.c * x1.a * x2.b) - (x2.a * x1.b * x3.c) + (x1.b * x2.c * x3.a) -
