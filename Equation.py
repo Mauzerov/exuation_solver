@@ -1,4 +1,5 @@
 import tkinter as tk
+from decimal import Decimal
 
 
 class Equation(tk.PanedWindow):
@@ -27,9 +28,9 @@ class Equation(tk.PanedWindow):
     @property
     def values(self):
         value = self.value.get()
-        a = int(self.a.get())
-        b = int(self.b.get())
-        c = int(self.c.get())
+        a = Decimal(int(self.a.get()))
+        b = Decimal(int(self.b.get()))
+        c = Decimal(int(self.c.get()))
         assert a * a + b * b + c * c > 0, "At Least One Of Values Has To Be Set"
         return Eq({
             'v': value, 'a': a, 'b': b, 'c': c
